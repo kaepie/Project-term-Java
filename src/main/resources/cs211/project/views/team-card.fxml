@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.TeamCardController">
+   <children>
+      <Pane prefHeight="120.0" prefWidth="40.0" />
+      <Label fx:id="teamNameLabel" prefHeight="120.0" prefWidth="413.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="120.0" prefWidth="14.0" />
+      <Label fx:id="countMemberLabel" prefHeight="120.0" prefWidth="20.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="120.0" prefWidth="10.0" text="/">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="maxMemberLabel" prefHeight="120.0" prefWidth="22.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>

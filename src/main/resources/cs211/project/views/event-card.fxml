@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EventController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="550.0" style="-fx-background-color: transparent;">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="25.0" />
+            <Circle fx:id="imgCircle" fill="DODGERBLUE" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+            <Pane prefHeight="100.0" prefWidth="50.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="107.0">
+               <children>
+                  <Pane prefHeight="15.0" prefWidth="100.0" />
+                  <Label fx:id="nameEventLabel" text="Label" />
+               </children>
+            </VBox>
+            <Pane prefHeight="100.0" prefWidth="35.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="144.0">
+               <children>
+                  <Pane prefHeight="15.0" prefWidth="100.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="186.0">
+                     <children>
+                        <Pane prefHeight="34.0" prefWidth="45.0" />
+                        <Label fx:id="countMemberLabel" text="Label" />
+                        <Label text="/" />
+                        <Label fx:id="maxMemberLabel" text="Label" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

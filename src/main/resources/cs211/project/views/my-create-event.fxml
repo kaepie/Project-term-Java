@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="760.0" prefWidth="784.0" styleClass="defaultPage" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.MyCreateEventController">
+    <children>
+        <AnchorPane layoutX="79.5" layoutY="40.0" prefHeight="680.0" prefWidth="625.0">
+            <children>
+                <Label layoutX="65.0" layoutY="31.0" styleClass="event-text" text="My Create Event">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="77.0" layoutY="381.0" styleClass="event-text" text="Name :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="280.0" layoutX="62.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="nameEvent" layoutX="246.0" layoutY="381.0" styleClass="event-text" text="nameEvent">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="74.0" layoutY="490.0" styleClass="event-text" text="Details :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="65.0" layoutY="570.0" styleClass="event-text" text="Edit User :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="370.0" layoutY="490.0" styleClass="event-text" text="Activity :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="370.0" layoutY="570.0" styleClass="event-text" text="Staff :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <MFXButton layoutX="264.0" layoutY="491.0" onAction="#goToEditEvent" text="details" />
+                <MFXButton layoutX="477.0" layoutY="491.0" onAction="#goToEventActivity" text="activity" />
+                <MFXButton layoutX="257.0" layoutY="571.0" onAction="#goToEditUser" text="edit user" />
+                <MFXButton layoutX="484.0" layoutY="571.0" onAction="#goToStaffList" text="staff" />
+                <DatePicker fx:id="dateStart" layoutX="416.0" layoutY="93.0" promptText="Start date" />
+                <DatePicker fx:id="dateEnd" layoutX="415.0" layoutY="166.0" promptText="End date" />
+                <Label layoutX="350.0" layoutY="92.0" styleClass="event-text" text="Enroll :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="timeStart" layoutX="416.0" layoutY="129.0" prefHeight="26.0" prefWidth="174.0" promptText="Start time" />
+                <TextField fx:id="timeEnd" layoutX="416.0" layoutY="203.0" prefHeight="26.0" prefWidth="175.0" promptText="End time" />
+                <MFXButton layoutX="558.0" layoutY="279.0" onAction="#setDateTimeJoin" text="OK" />
+            <TextField fx:id="maxMember" layoutX="417.0" layoutY="242.0" prefHeight="26.0" prefWidth="174.0" promptText="จำนวนผู้เข้าร่วมสูงสุด" />
+            <Label fx:id="errorLabel" layoutX="559.0" layoutY="305.0" text="label" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

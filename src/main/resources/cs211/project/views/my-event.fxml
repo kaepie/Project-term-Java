@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="784.0" styleClass="defaultPage" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.MyEventController">
+   <children>
+      <AnchorPane layoutX="79.5" layoutY="40.0" prefHeight="680.0" prefWidth="625.0">
+         <children>
+            <Label layoutX="65.0" layoutY="31.0" styleClass="event-text" text="My Event">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="365.0" styleClass="event-text" text="ชื่อ Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="423.0" styleClass="event-text" text="รายละเอียด">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="540.0" styleClass="event-text" text="วันที่และเวลาที่เริ่ม">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="590.0" styleClass="event-text" text="วันที่และเวลาที่สิ้นสุด">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameEventLabel" layoutX="201.0" layoutY="365.0" styleClass="event-text" text="nameLabel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateStartLabel" layoutX="244.0" layoutY="540.0" styleClass="event-text" text="dateStart">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateEndLabel" layoutX="244.0" layoutY="590.0" styleClass="event-text" text="dateEnd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeStartLabel" layoutX="380.0" layoutY="540.0" styleClass="event-text" text="timeStart">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeEndLabel" layoutX="380.0" layoutY="590.0" styleClass="event-text" text="timeEnd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="detailsTextArea" layoutX="200.0" layoutY="413.0" prefHeight="110.0" prefWidth="360.0" />
+            <ScrollPane fx:id="scrollPane" layoutX="63.0" layoutY="124.0" prefHeight="200.0" prefWidth="500.0" style="-fx-padding: 10; -fx-hbar-policy: never; -fx-vbar-policy: never;" styleClass="defaultPage">
+               <content>
+                  <TableView fx:id="activityTableView" prefHeight="200.0" prefWidth="482.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Button fx:id="teamButton" layoutX="287.0" layoutY="654.0" mnemonicParsing="false" onAction="#goToTeamList" styleClass="defaultButton" text="Team" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

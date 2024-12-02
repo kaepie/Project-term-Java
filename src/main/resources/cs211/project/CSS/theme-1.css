@@ -1,0 +1,186 @@
+    /*
+Text = #0b0e0c
+Background = #E4DCCF
+Primary = #7D9D9C
+Secondary = #d2dad5
+Accent = #657b6d
+*/
+    .parent{
+
+}
+
+.button{
+    -fx-cursor: hand;
+}
+
+.app-image{
+    -fx-background-image: url(spongebob.gif);
+}
+.defaultButton{
+     -fx-border-radius: 16;
+     -fx-background-radius: 16;
+     -fx-background-color: #7D9D9C;
+}
+
+.defaultButton:hover{
+    -fx-background-color:rgba(125,157,157,0.8);
+    -fx-text-fill: white;
+}
+
+.defaultPage{
+    -fx-background-color: #F0EBE3;
+}
+.defaultInnerPage{
+    -fx-background-color: #E4DCCF;
+    -fx-background-radius:30;
+}
+
+.app-logInButton{
+    -fx-background-color: #7D9D9C;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+.app-logInButton:hover{
+    -fx-background-color: transparent ;
+    -fx-background-radius: 5;
+    -fx-text-fill: #7D9D9C;
+    -fx-border-color: #7D9D9C;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 5;
+}
+.background-pageArea{
+    -fx-background-color: #E4DCCF;
+}
+.background-leftArea{
+    -fx-background-color: #7D9D9C;
+}
+
+.sidebar-button{
+    -fx-background-color: transparent;
+    -fx-text-fill: #576F72;
+}
+.sidebar-background{
+    -fx-background-color: #7D9D9C;
+}
+
+.sidebar-button:hover{
+    -fx-background-color: #576F72;
+    -fx-text-fill: white;
+}
+
+.sidebar-button:focused{
+    -fx-border-color: rgba(87,111,114,0.7);
+    -fx-border-width: 0 0 0 10;
+    -fx-text-fill: white;
+}
+
+#circle{
+    -fx-background-color: black;
+}
+
+.signUpButton{
+    -fx-background-color: transparent;
+    -fx-text-fill: gray;
+}
+.signUpButton:hover{
+    -fx-text-fill:  #7D9D9C;
+    -fx-underline: true;
+}
+.app-text{
+    -fx-text-fill: #7D9D9C;
+}
+.default-text{
+    -fx-text-fill: black;
+}
+.event-text{
+    -fx-text-fill: black;
+}
+/**************************************************
+ * Text Fields
+**************************************************/
+#customField {
+    -fx-min-width: 130;
+    -fx-border-color:#7D9D9C ;
+    -fx-background-color: transparent;
+    -fx-text-fill: #7D9D9C;
+}
+
+#customField .floating-text {
+    -fx-text-fill: #7D9D9C;
+    -fx-background-color: #F0EBE3 ;
+}
+#customField .mfx-font-icon{
+    -mfx-color: #7D9D9C;
+}
+/**************************************************
+ * Password Fields
+**************************************************/
+#customPassword {
+    -fx-border-color: #7D9D9C;
+    -fx-background-color: transparent;
+    -fx-text-fill: #7D9D9C;
+}
+
+#customPassword .mfx-font-icon {
+    -mfx-color: #7D9D9C;
+}
+
+#customPassword .floating-text {
+    -fx-text-fill: #7D9D9C;
+    -fx-background-color:#F0EBE3;
+}
+.card{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+
+.card:hover{
+    -fx-background-color: gray;
+    -fx-translate-y:5;
+}
+.card:focused{
+    -fx-background-color: black;
+}
+
+/***********************************
+ * Table-View
+***********************************/
+
+.mfx-table-view{
+    -fx-background-radius:10;
+    -fx-border-color: transparent;
+}
+/*
+.mfx-table-row:hover{
+   -fx-background-color: red;
+}
+ */
+/**********************************
+ *Button
+**********************************/
+    .mfx-button{
+        -fx-background-color: #7D9D9C;
+        -fx-text-fill: white;
+        -fx-background-radius: 5;
+    }
+    .mfx-button:focused{
+        -fx-background-color: #7D9D9C;
+        -fx-text-fill: white;
+        -fx-background-radius: 5;
+    }
+    .mfx-button:hover{
+        -fx-background-color: transparent ;
+        -fx-background-radius: 5;
+        -fx-text-fill: #7D9D9C;
+        -fx-border-color: #7D9D9C;
+        -fx-border-width: 1;
+        -fx-border-style: solid;
+        -fx-border-radius: 5;
+    }
+    .mfx-button:armed{
+        -fx-background-color: #7D9D9C;
+        -fx-text-fill: white;
+        -fx-background-radius: 5;
+    }
+/***************************************

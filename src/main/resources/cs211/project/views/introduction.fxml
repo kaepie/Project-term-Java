@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="760.0" prefWidth="512.0" styleClass="defaultPage" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.IntroductionController">
+   <children>
+      <Label layoutX="174.0" layoutY="43.0" styleClass="app-text" text="Introduction">
+         <font>
+            <Font name="Impact" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="196.0" styleClass="default-text" text="1.Username ไม่สามารถตั้งซ้ำกันได้แต่สามารถตั้งกี่ตัวก็ได้ Password มีอย่างน้อย 6 ตัว">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="211.0" prefHeight="20.0" prefWidth="456.0" styleClass="default-text" text="2.สามารถเปลี่ยนธีมและpassword ได้ในแถบsetting ด้านซ้ายหลังจากเปลี่ยนธีมกด refresh 1 ครั้ง">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="236.0" prefHeight="15.0" prefWidth="456.0" styleClass="default-text" text="3.ข้อมูลตอนสร้างอีเว้นท์ต้องเขียนให้ถูก format ไม่งั้นจะไม่สามารถสร้างอีเว้นท์ได้">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="256.0" prefHeight="15.0" prefWidth="176.0" styleClass="default-text" text="วันที่ เช่น 9/16/2023 เวลา เช่น 9:05">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="276.0" prefHeight="15.0" prefWidth="470.0" styleClass="default-text" text="4.สามารถแก้ไขรายละเอียดของอีเว้นท์ได้ในหน้า Edit event โดยผู้ที่สามารถแก้ไขได้ต้องเป็นผู้จัดอีเว้นท์">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="297.0" prefHeight="15.0" prefWidth="398.0" styleClass="default-text" text="5.สามารถเปิดรับผู้เข้าร่วมอีเว้นท์ได้ผ่านทางหน้า My create event โดย จะต้องป้อนวันที่">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="340.0" styleClass="default-text" text="6.ผู้เข้าร่วมอีเว้นท์ที่เข้าร่วมทีมของอีเว้นท์นั้นๆ สามารถเข้าร่วมได้หลายทีมผ่านทางหน้า Home">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="364.0" styleClass="default-text" text="7.ผู้เข้าร่วมอีเว้นท์สามารถดู activity และรายละเอียดต่างๆของอีเว้นท์ที่เข้าร่วมได้ผ่านทางหน้า My Event">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="386.0" prefHeight="15.0" prefWidth="463.0" styleClass="default-text" text="8.ข้อมูลตอนสร้างกิจกรรมต้องเขียนให้ถูก format ไม่งั้นจะไม่สามารถสร้างกิจกรรมได้">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="426.0" prefHeight="15.0" prefWidth="456.0" styleClass="default-text" text="9.ข้อมูลตอนสร้างทีมต้องเขียนให้ถูก format ไม่งั้นจะไม่สามารถสร้างทีมได้">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="318.0" prefHeight="15.0" prefWidth="313.0" styleClass="default-text" text="และ  เวลาให้ถูก formatและ ป้อนจำนวนสูงสุดที่สามารถเข้าร่วมอีเว้นท์">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="406.0" prefHeight="15.0" prefWidth="176.0" styleClass="default-text" text="วันที่ เช่น 9/16/2023 เวลา เช่น 09:05">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="446.0" prefHeight="15.0" prefWidth="176.0" styleClass="default-text" text="วันที่ เช่น 9/16/2023 เวลา เช่น 09:05">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="466.0" prefHeight="15.0" prefWidth="197.0" styleClass="default-text" text="10.ใน 1 อีเว้นท์ไม่สามารถตั้งชื่อทีมซ้ำกันได้">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <MFXButton layoutX="433.0" layoutY="709.0" onAction="#backToApp" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,182 @@
+/*
+Text = #E9E2E5
+Background = #171114
+Primary = #4C3842
+Secondary = #231A1E
+Accent = #977284
+*/
+.parent{
+
+}
+
+.button{
+    -fx-cursor: hand;
+}
+
+.app-image{
+    -fx-background-image: url(patrick.gif);
+}
+.defaultButton{
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-background-color: #412F38;
+    -fx-text-fill: white;
+}
+
+.defaultButton:hover{
+    -fx-background-color: rgba(65, 47, 56, 0.8);
+    -fx-text-fill: white;
+}
+
+.defaultPage{
+    -fx-background-color: #231A1E;
+}
+.defaultInnerPage{
+    -fx-background-color: #4C3842;
+    -fx-background-radius:30;
+}
+
+.app-logInButton{
+    -fx-background-color: #977284;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+.app-logInButton:hover{
+    -fx-background-color: transparent ;
+    -fx-background-radius: 5;
+    -fx-text-fill: #977284;
+    -fx-border-color: #977284;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 5;
+}
+.background-pageArea{
+    -fx-background-color: #231A1E;
+}
+.background-leftArea{
+    -fx-background-color: #231A1E;
+}
+
+.sidebar-button{
+    -fx-background-color: transparent;
+    -fx-text-fill: #F6F9F7;
+}
+.sidebar-background{
+    -fx-background-color: #171114;
+}
+
+.sidebar-button:hover{
+    -fx-background-color: #946b93;
+}
+
+.sidebar-button:focused{
+    -fx-background-color: #F6F9F7;
+    -fx-text-fill: black;
+
+}
+
+#circle{
+    -fx-background-color: black;
+}
+
+.signUpButton{
+    -fx-background-color: transparent;
+    -fx-text-fill: gray;
+}
+.signUpButton:hover{
+    -fx-text-fill:  #977284;
+    -fx-underline: true;
+}
+.app-text{
+    -fx-text-fill: #E9E2E5;
+}
+.default-text{
+    -fx-text-fill: white;
+}
+.event-text{
+    -fx-text-fill: #E9E2E5;
+}
+/**************************************************
+ * Text Fields
+**************************************************/
+#customField {
+    -fx-min-width: 130;
+    -fx-font-family: 'Visby Round CF Medium';
+    -fx-border-color:#977284 ;
+    -fx-background-color: transparent;
+    -fx-text-fill: #977284;
+}
+
+#customField .floating-text {
+    -fx-font-family: 'Visby Round CF Medium';
+    -fx-text-fill: #977284;
+    -fx-background-color: #231A1E ;
+}
+#customField .mfx-font-icon{
+    -mfx-color: #977284;
+}
+/**************************************************
+ * Password Fields
+**************************************************/
+#customPassword {
+    -fx-border-color: #977284;
+    -fx-background-color: transparent;
+    -fx-text-fill: #977284;
+}
+
+#customPassword .mfx-font-icon {
+    -mfx-color: #977284;
+}
+
+#customPassword .floating-text {
+    -fx-text-fill: #977284;
+    -fx-background-color:#231A1E;
+}
+/**********************************
+ *Button
+**********************************/
+.mfx-button{
+    -fx-background-color: #977284;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+.mfx-button:focused{
+    -fx-background-color: #977284;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+.mfx-button:hover{
+    -fx-background-color: transparent ;
+    -fx-background-radius: 5;
+    -fx-text-fill: #977284;
+    -fx-border-color: #977284;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 5;
+}
+.mfx-button:armed{
+    -fx-background-color: #977284;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+}
+/***************************************
+ * Table-View
+***********************************/
+
+.mfx-table-view{
+    -fx-background-radius:10;
+    -fx-border-color: transparent;
+}
+.card{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+.card:hover{
+    -fx-background-color: gray;
+    -fx-translate-y:5;
+}
+.card:focused{
+    -fx-background-color: black;
+}
+
+

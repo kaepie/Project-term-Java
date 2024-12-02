@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="760.0" prefWidth="784.0" styleClass="defaultPage" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.CreateStaffTeamController">
+   <children>
+      <AnchorPane layoutX="79.5" layoutY="40.0" prefHeight="680.0" prefWidth="625.0">
+         <children>
+            <Label layoutX="40.0" layoutY="30.0" styleClass="default-text" text="Create Staff Team">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="102.0" styleClass="default-text" text="ชื่อทีม">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="162.0" styleClass="default-text" text="จำนวนคนในทีม">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="222.0" styleClass="default-text" text="เวลาที่เปิดรับ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="342.0" styleClass="default-text" text="เวลาที่ปิดรับ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="teamNameText" layoutX="244.0" layoutY="102.0" prefHeight="26.0" prefWidth="220.0" />
+            <TextField fx:id="capacity" layoutX="244.0" layoutY="162.0" prefHeight="26.0" prefWidth="220.0" />
+            <TextField fx:id="openTimeText" layoutX="244.0" layoutY="222.0" prefHeight="26.0" prefWidth="220.0" />
+            <TextField fx:id="closeTimeText" layoutX="244.0" layoutY="342.0" prefHeight="26.0" prefWidth="220.0" />
+            <Button layoutX="263.0" layoutY="616.0" mnemonicParsing="false" onAction="#backButton" prefHeight="50.0" prefWidth="100.0" styleClass="defaultButton" text="back" textFill="WHITE" />
+            <Label fx:id="errorLabel" layoutX="286.0" layoutY="129.0" text="errorLabel" textFill="RED" />
+            <DatePicker fx:id="openDate" layoutX="244.0" layoutY="282.0" prefHeight="26.0" prefWidth="220.0" />
+            <DatePicker fx:id="closeDate" layoutX="244.0" layoutY="402.0" prefHeight="26.0" prefWidth="220.0" />
+            <Label layoutX="65.0" layoutY="282.0" styleClass="default-text" text="วันที่เปิดรับ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="402.0" styleClass="default-text" text="วันที่ปิดรับ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="253.0" layoutY="481.0" mnemonicParsing="false" onAction="#createTeamButton" prefHeight="50.0" prefWidth="120.0" styleClass="defaultButton" text="Create" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

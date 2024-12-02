@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="760.0" prefWidth="784.0" styleClass="defaultPage" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.CreateEventActivityController">
+   <children>
+      <AnchorPane layoutX="80.0" layoutY="40.0" prefHeight="680.0" prefWidth="625.0">
+         <children>
+            <Label layoutX="263.0" layoutY="76.0" styleClass="event-text" text="Create Activity">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="187.0" layoutY="428.0" mnemonicParsing="false" onAction="#backToEventActivity" styleClass="defaultButton" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label layoutX="156.0" layoutY="154.0" styleClass="event-text" text="ชื่อกิจกรรม">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="156.0" layoutY="196.0" prefHeight="27.0" prefWidth="108.0" styleClass="event-text" text="วันเริ่มกิจกรรม">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="155.0" layoutY="278.0" styleClass="event-text" text="วันสิ้นสุดกิจกรรม">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="145.0" layoutY="370.0" styleClass="event-text" text="รายละเอียดกิจกรรม">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="nameTextField" layoutX="325.0" layoutY="148.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <DatePicker fx:id="endDatePicker" layoutX="325.0" layoutY="279.0" prefHeight="25.0" prefWidth="224.0" />
+            <DatePicker fx:id="startDatePicker" layoutX="325.0" layoutY="197.0" prefHeight="25.0" prefWidth="224.0" />
+            <Button layoutX="387.0" layoutY="428.0" mnemonicParsing="false" onAction="#createActivity" styleClass="defaultButton" text="Create">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <TextArea fx:id="detailTextArea" layoutX="325.0" layoutY="361.0" prefHeight="45.0" prefWidth="224.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+            <Label layoutX="156.0" layoutY="239.0" styleClass="event-text" text="เวลาเริ่มกิจกรรม">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="timeStart" layoutX="325.0" layoutY="233.0" promptText="hh:mm:ss">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label layoutX="149.0" layoutY="320.0" styleClass="event-text" text="เวลาสิ้นสุดกิจกรรม">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="timeEnd" layoutX="325.0" layoutY="314.0" promptText="hh:mm:ss">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label fx:id="errorLabel" layoutX="310.0" layoutY="466.0" text="Label" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

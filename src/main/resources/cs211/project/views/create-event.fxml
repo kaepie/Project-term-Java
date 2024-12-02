@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="760.0" prefWidth="784.0" styleClass="defaultPage" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.CreateEventController">
+   <children>
+      <AnchorPane layoutX="79.5" layoutY="40.0" prefHeight="680.0" prefWidth="625.0" styleClass="defaultInnerPage">
+         <children>
+            <Label layoutX="65.0" layoutY="31.0" styleClass="event-text" text="Create Event">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="102.0" styleClass="event-text" text="ชื่อ Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="162.0" styleClass="event-text" text="รายละเอียด Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="222.0" styleClass="event-text" text="วันที่เริ่ม Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="282.0" styleClass="event-text" text="เวลาที่เริ่ม Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="342.0" styleClass="event-text" text="วันที่สิ้นสุด Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="402.0" styleClass="event-text" text="เวลาที่สิ้นสุด Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameEvent" layoutX="392.0" layoutY="102.0" prefHeight="26.0" prefWidth="220.0" promptText="ชื่อ Event" />
+            <TextArea fx:id="detailsTextArea" layoutX="392.0" layoutY="137.0" prefHeight="75.0" prefWidth="220.0" promptText="รายละเอียด Event" style="-fx-wrap-text: true;" />
+            <DatePicker fx:id="dateStartEvent" layoutX="392.0" layoutY="221.0" prefHeight="26.0" prefWidth="220.0" promptText="วันที่เริ่ม" />
+            <TextField fx:id="timeStartEvent" layoutX="392.0" layoutY="281.0" prefHeight="26.0" prefWidth="220.0" promptText="เวลาที่เริ่ม" />
+            <DatePicker fx:id="dateEndEvent" layoutX="392.0" layoutY="341.0" prefHeight="26.0" prefWidth="220.0" promptText="วันที่จบ" />
+            <TextField fx:id="timeEndEvent" layoutX="392.0" layoutY="401.0" prefHeight="26.0" prefWidth="220.0" promptText="เวลาที่จบ" />
+            <MFXButton layoutX="79.0" layoutY="294.0" onAction="#handleUploadImageButton" text="add Image" />
+            <MFXButton layoutX="287.0" layoutY="541.0" onAction="#handleCreateEventButton" text="create" />
+            <Label fx:id="errorLabel" layoutX="296.0" layoutY="574.0" text="Label" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Circle fx:id="eventCircle" fill="DODGERBLUE" layoutX="117.0" layoutY="197.0" radius="82.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

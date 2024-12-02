@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="760.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.TeamListUserController">
+   <children>
+      <Button layoutX="671.0" layoutY="37.0" mnemonicParsing="false" onAction="#backButton" styleClass="defaultButton" text="back" />
+      <Label layoutX="72.0" layoutY="37.0" styleClass="event-text" text="All Teams">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollPane" layoutX="72.0" layoutY="80.0" prefHeight="600.0" prefWidth="640.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="596.0" prefWidth="637.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

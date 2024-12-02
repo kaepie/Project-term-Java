@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="241.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.StaffController">
+   <children>
+      <Pane prefHeight="44.0" prefWidth="600.0" />
+      <Circle fx:id="imgCircle" fill="DODGERBLUE" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+      <Pane prefHeight="23.0" prefWidth="600.0" />
+      <Label fx:id="usernameLabel" text="username">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="roleLabel" text="role">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" text="status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="36.0" prefWidth="600.0" />
+   </children>
+</VBox>

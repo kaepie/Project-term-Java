@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="760.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.TeamDetailController">
+   <children>
+      <AnchorPane layoutX="89.5" layoutY="50.0" prefHeight="680.0" prefWidth="625.0">
+         <children>
+            <Label fx:id="eventNameLabel" layoutX="65.0" layoutY="31.0" styleClass="event-text" text="eventName">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="activitesButton" layoutX="250.0" layoutY="600.0" mnemonicParsing="false" onAction="#goToActivity" prefHeight="50.0" prefWidth="100.0" styleClass="defaultButton" text="Activities" textFill="WHITE" />
+            <Label layoutX="65.0" layoutY="340.0" styleClass="event-text" text="ชื่อ Team">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="400.0" styleClass="event-text" text="วันเวลาที่เปิดรับสมัคร">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="460.0" styleClass="event-text" text="วันเวลาที่ปิดรับสมัคร">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="eventImageView" fitHeight="200.0" fitWidth="280.0" layoutX="180.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="teamNameLabel" layoutX="245.0" layoutY="340.0" styleClass="event-text" text="teamName">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateStartLabel" layoutX="245.0" layoutY="400.0" styleClass="event-text" text="dateStart">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateEndLabel" layoutX="245.0" layoutY="460.0" styleClass="event-text" text="dateEnd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeStartLabel" layoutX="380.0" layoutY="400.0" styleClass="event-text" text="timeStart">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeEndLabel" layoutX="380.0" layoutY="460.0" styleClass="event-text" text="timeEnd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="chatButton" layoutX="435.0" layoutY="600.0" mnemonicParsing="false" onAction="#goToChat" prefHeight="50.0" prefWidth="100.0" styleClass="defaultButton" text="Chat" textFill="WHITE" />
+            <Label fx:id="countMemberLabel" layoutX="419.0" layoutY="290.0" styleClass="event-text" text="label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="465.0" layoutY="290.0" styleClass="event-text" text="/">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="maxMemberLabel" layoutX="483.0" layoutY="290.0" styleClass="event-text" text="label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="memberButton" layoutX="65.0" layoutY="600.0" mnemonicParsing="false" onAction="#goToTeamMember" prefHeight="50.0" prefWidth="100.0" styleClass="defaultButton" text="Member" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="671.0" layoutY="37.0" mnemonicParsing="false" onAction="#backToTeamList" styleClass="defaultButton" text="back" />
+   </children>
+</AnchorPane>

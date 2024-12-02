@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="760.0" prefWidth="784.0" styleClass="defaultPage" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.JoinEventController">
+   <children>
+      <AnchorPane layoutX="79.5" layoutY="40.0" prefHeight="680.0" prefWidth="625.0">
+         <children>
+            <Label layoutX="65.0" layoutY="31.0" styleClass="event-text" text="Join Event">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="joinTeamButton" layoutX="156.25" layoutY="600.0" mnemonicParsing="false" onAction="#goToSelectTeam" prefHeight="50.0" prefWidth="100.0" styleClass="defaultButton" text="Join Staff" textFill="WHITE" />
+            <Label layoutX="65.0" layoutY="340.0" styleClass="event-text" text="ชื่อ Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="400.0" styleClass="event-text" text="รายละเอียด Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="460.0" styleClass="event-text" text="วันที่เวลาเริ่ม Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="520.0" styleClass="event-text" text="วันที่เวลาสิ้นสุด Event">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="eventImageView" fitHeight="200.0" fitWidth="280.0" layoutX="180.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nameEventLabel" layoutX="245.0" layoutY="340.0" styleClass="event-text" text="nameEvent">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateStartEventLabel" layoutX="245.0" layoutY="460.0" styleClass="event-text" text="dateStartEvent">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateEndEventLabel" layoutX="245.0" layoutY="520.0" styleClass="event-text" text="dateEndEvent">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeStartEventLabel" layoutX="380.0" layoutY="460.0" styleClass="event-text" text="timeStartEvent">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeEndEventLabel" layoutX="380.0" layoutY="520.0" styleClass="event-text" text="timeEndEvent">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="joinEventButton" layoutX="368.75" layoutY="600.0" mnemonicParsing="false" onAction="#onJointEventButton" prefHeight="50.0" prefWidth="100.0" styleClass="defaultButton" text="Join Event" textFill="WHITE" />
+            <Label fx:id="countEmpty" layoutX="419.0" layoutY="290.0" styleClass="event-text" text="label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="465.0" layoutY="290.0" styleClass="event-text" text="/">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="countTotal" layoutX="483.0" layoutY="290.0" styleClass="event-text" text="label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="detailsEvent" layoutX="245.0" layoutY="387.0" prefHeight="68.0" prefWidth="200.0" />
+            <Label fx:id="errorLabel" layoutX="477.0" layoutY="611.0" text="label" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
